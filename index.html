@@ -99,23 +99,15 @@
                   <div class="aiOrb__halo"></div>
                   <div class="aiOrb__scan"></div>
                   <div class="aiOrb__face">
-                    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg">
-                      <defs>
-                        <linearGradient id="ag" x1="30" y1="40" x2="210" y2="210" gradientUnits="userSpaceOnUse">
-                          <stop stop-color="#6D28D9"/>
-                          <stop offset="0.55" stop-color="#0891B2"/>
-                          <stop offset="1" stop-color="#0F766E"/>
-                        </linearGradient>
-                      </defs>
-                      <path d="M120 26c36 0 66 28 66 64v12c0 6.3 3.8 12 9.6 14.4 14.2 6 24.4 20 24.4 36.4v18c0 25.4-20.6 46-46 46H66c-25.4 0-46-20.6-46-46v-18c0-16.4 10.2-30.4 24.4-36.4 5.8-2.4 9.6-8.1 9.6-14.4V90c0-36 30-64 66-64Z" fill="rgba(255,255,255,0.85)" stroke="rgba(15,23,42,0.12)" stroke-width="3"/>
-                      <path d="M86 96c0-19 15-34 34-34s34 15 34 34" stroke="url(#ag)" stroke-width="6" stroke-linecap="round"/>
-                      <rect x="62" y="124" width="116" height="58" rx="22" fill="rgba(15,23,42,0.03)" stroke="rgba(15,23,42,0.12)" stroke-width="3"/>
-                      <circle cx="94" cy="153" r="10" fill="url(#ag)"/>
-                      <circle cx="146" cy="153" r="10" fill="url(#ag)"/>
-                      <path d="M106 183h28" stroke="rgba(15,23,42,0.32)" stroke-width="6" stroke-linecap="round"/>
-                      <path d="M120 44V28" stroke="url(#ag)" stroke-width="6" stroke-linecap="round"/>
-                      <circle cx="120" cy="20" r="8" fill="url(#ag)"/>
-                    </svg>
+                    <div class="aiAbstract" aria-hidden="true">
+                      <div class="aiAbstract__ring aiAbstract__ring--a"></div>
+                      <div class="aiAbstract__ring aiAbstract__ring--b"></div>
+                      <div class="aiAbstract__core"></div>
+                      <div class="aiAbstract__dot aiAbstract__dot--1"></div>
+                      <div class="aiAbstract__dot aiAbstract__dot--2"></div>
+                      <div class="aiAbstract__dot aiAbstract__dot--3"></div>
+                    </div>
+                    <img class="aiLogoMark" src="./images/veltrix-white-bg.png" alt="Veltrix Tech" loading="lazy" />
                   </div>
                   <div class="aiOrb__meta">
                     <span class="aiPill">AI Chatbots</span>
@@ -388,59 +380,86 @@
 
       <section class="section section--cta" id="contact">
         <div class="container">
-          <div class="cta" data-reveal>
-            <div class="cta__left">
-              <h2 class="cta__title">Let's build something premium for your business</h2>
-              <p class="cta__sub">
-                Share your idea and we'll respond with timeline + estimate.
+          <div class="cta2" data-reveal>
+            <div class="cta2__left">
+              <div class="cta2__badge">Free consultation • Fast estimate</div>
+              <h2 class="cta2__title">Start your next build with Veltrix Tech</h2>
+              <p class="cta2__sub">
+                Tell us what you need. We’ll share a clear plan, timeline, and estimate—no confusion.
               </p>
-              <div class="cta__meta">
-                <div class="meta">
-                  <div class="meta__k">Firm</div>
-                  <div class="meta__v">Veltrix Tech</div>
+
+              <div class="cta2__features">
+                <div class="fItem">
+                  <div class="fItem__i">⚡</div>
+                  <div class="fItem__t">Fast delivery</div>
+                  <div class="fItem__p">Quick iterations with premium UI/UX.</div>
                 </div>
-                <div class="meta">
-                  <div class="meta__k">Services</div>
-                  <div class="meta__v">Web • AI • Apps • Software • Ecommerce</div>
+                <div class="fItem">
+                  <div class="fItem__i">🔒</div>
+                  <div class="fItem__t">Secure by default</div>
+                  <div class="fItem__p">Best practices for web & APIs.</div>
                 </div>
+                <div class="fItem">
+                  <div class="fItem__i">🤖</div>
+                  <div class="fItem__t">AI-ready</div>
+                  <div class="fItem__p">Chatbots, automation, integrations.</div>
+                </div>
+              </div>
+
+              <div class="cta2__chips" aria-label="Highlights">
+                <span class="chip2">Websites</span>
+                <span class="chip2">AI Chatbots</span>
+                <span class="chip2">Apps</span>
+                <span class="chip2">Ecommerce</span>
+                <span class="chip2">Multi‑vendor</span>
               </div>
             </div>
 
-            <form class="form" id="leadForm" autocomplete="on">
-              <div class="form__row">
-                <label class="field">
-                  <span class="field__label">Your name</span>
-                  <input class="field__input" name="name" required placeholder="Full name" />
-                </label>
-                <label class="field">
-                  <span class="field__label">Phone / WhatsApp</span>
-                  <input class="field__input" name="phone" required placeholder="+91…" inputmode="tel" />
-                </label>
+            <div class="cta2__right">
+              <div class="formCard">
+                <div class="formCard__head">
+                  <div>
+                    <div class="formCard__k">Project enquiry</div>
+                    <div class="formCard__t">Get a quick quote</div>
+                  </div>
+                  <div class="formCard__seal">24h</div>
+                </div>
+
+                <form class="form2" id="leadForm" autocomplete="on">
+                  <div class="form2__row">
+                    <label class="field2">
+                      <span class="field2__label">Name</span>
+                      <input class="field2__input" name="name" required placeholder="Full name" />
+                    </label>
+                    <label class="field2">
+                      <span class="field2__label">Phone</span>
+                      <input class="field2__input" name="phone" required placeholder="+91…" inputmode="tel" />
+                    </label>
+                  </div>
+
+                  <label class="field2">
+                    <span class="field2__label">Email</span>
+                    <input class="field2__input" name="email" type="email" placeholder="name@company.com" />
+                  </label>
+
+                  <label class="field2">
+                    <span class="field2__label">Requirement</span>
+                    <textarea
+                      class="field2__input field2__input--area"
+                      name="message"
+                      required
+                      placeholder="Website / AI chatbot / app / ecommerce / multi-vendor…"
+                      rows="4"
+                    ></textarea>
+                  </label>
+
+                  <button class="btn btn--primary form2__submit" type="submit">Send request</button>
+                  <p class="form2__hint">
+                    This demo opens your email app. We can connect it to WhatsApp / backend API anytime.
+                  </p>
+                </form>
               </div>
-
-              <label class="field">
-                <span class="field__label">Email</span>
-                <input class="field__input" name="email" type="email" placeholder="name@company.com" />
-              </label>
-
-              <label class="field">
-                <span class="field__label">What do you want to build?</span>
-                <textarea
-                  class="field__input field__input--area"
-                  name="message"
-                  required
-                  placeholder="Website / AI chatbot / app / ecommerce / multi-vendor…"
-                  rows="4"
-                ></textarea>
-              </label>
-
-              <div class="form__actions">
-                <button class="btn btn--primary" type="submit">Send Request</button>
-                <p class="form__hint">
-                  This demo form opens your email app. We can connect it to WhatsApp / backend API anytime.
-                </p>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>

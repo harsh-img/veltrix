@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veltrix Tech FAQ — services, timelines, tech stack, pricing, and support." />
+    <title>FAQ | Veltrix Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise" aria-hidden="true"></div>
+    </div>
+
+    <header class="header" data-elevate>
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Veltrix Tech home">
+          <img class="brand__logo brand__logo--nav" src="./images/veltrix-white-bg.png" alt="Veltrix Tech logo" width="140" height="36" loading="eager" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link" href="index.html#services">Services</a>
+            <a class="nav__link" href="index.html#stack">Tech Stack</a>
+            <a class="nav__link" href="about.html">About</a>
+            <a class="nav__link" href="faq.html" aria-current="page">FAQ</a>
+            <a class="nav__link" href="contact.html">Contact</a>
+            <a class="btn btn--sm btn--primary" href="contact.html">Get a Quote</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumbs" data-reveal>
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>FAQ</span>
+          </div>
+
+          <div class="prose" data-reveal>
+            <h1>Frequently Asked Questions</h1>
+            <p>
+              Quick answers about delivery, pricing, technology, and support. If you want a custom quote, go to
+              <a href="contact.html">Contact</a>.
+            </p>
+
+            <div class="faq" aria-label="FAQ list">
+              <div class="acc" data-acc data-open="true">
+                <button class="acc__btn" type="button" data-acc-btn aria-expanded="true">
+                  <span class="acc__q">What services do you provide?</span>
+                  <span class="acc__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="acc__panel" data-acc-panel>
+                  <div class="acc__a">
+                    Websites, web apps, AI chatbots, mobile applications, custom software, ecommerce platforms, and multi-vendor systems.
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc" data-acc data-open="false">
+                <button class="acc__btn" type="button" data-acc-btn aria-expanded="false">
+                  <span class="acc__q">Which tech stack do you use?</span>
+                  <span class="acc__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="acc__panel" data-acc-panel>
+                  <div class="acc__a">
+                    PHP/Laravel, Node.js/Express, JavaScript, MongoDB/MySQL, Next.js/React, Python/Django, React Native, Flutter.
+                    We select based on performance, budget, timeline, and future scaling.
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc" data-acc data-open="false">
+                <button class="acc__btn" type="button" data-acc-btn aria-expanded="false">
+                  <span class="acc__q">How long does a project take?</span>
+                  <span class="acc__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="acc__panel" data-acc-panel>
+                  <div class="acc__a">
+                    Typical timelines: landing page (3–7 days), business website (1–3 weeks), ecommerce or dashboards (3–6 weeks),
+                    mobile apps (4–10 weeks). Exact timeline depends on features and content readiness.
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc" data-acc data-open="false">
+                <button class="acc__btn" type="button" data-acc-btn aria-expanded="false">
+                  <span class="acc__q">Do you provide maintenance & support?</span>
+                  <span class="acc__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="acc__panel" data-acc-panel>
+                  <div class="acc__a">
+                    Yes. We can provide bug-fixes, security updates, performance improvements, and feature enhancements after launch.
+                  </div>
+                </div>
+              </div>
+
+              <div class="acc" data-acc data-open="false">
+                <button class="acc__btn" type="button" data-acc-btn aria-expanded="false">
+                  <span class="acc__q">How do you estimate pricing?</span>
+                  <span class="acc__icon" aria-hidden="true">+</span>
+                </button>
+                <div class="acc__panel" data-acc-panel>
+                  <div class="acc__a">
+                    Pricing depends on scope, UI complexity, integrations, admin features, and timelines. Share your requirement and we’ll
+                    send a clear estimate + milestones.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img class="brand__logo brand__logo--footer" src="./images/veltrix-white-bg.png" alt="Veltrix Tech" width="140" height="36" loading="lazy" />
+          <p class="footer__text">Premium IT solutions for modern businesses.</p>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Company</p>
+          <div class="footer__list">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Legal</p>
+          <div class="footer__list">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Services</p>
+          <div class="footer__list">
+            <a href="index.html#services">Websites</a>
+            <a href="index.html#services">AI Chatbots</a>
+            <a href="index.html#services">Ecommerce / Multi‑vendor</a>
+          </div>
+          <div class="footer__copy" style="margin-top:10px">© <span id="year"></span> Veltrix Tech. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

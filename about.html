@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Veltrix Tech — partnership firm providing IT services, web, AI, apps, ecommerce, and software development." />
+    <title>About Us | Veltrix Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise" aria-hidden="true"></div>
+    </div>
+
+    <header class="header" data-elevate>
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Veltrix Tech home">
+          <img class="brand__logo brand__logo--nav" src="./images/veltrix-white-bg.png" alt="Veltrix Tech logo" width="140" height="36" loading="eager" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link" href="index.html#services">Services</a>
+            <a class="nav__link" href="index.html#stack">Tech Stack</a>
+            <a class="nav__link" href="about.html" aria-current="page">About</a>
+            <a class="nav__link" href="faq.html">FAQ</a>
+            <a class="nav__link" href="contact.html">Contact</a>
+            <a class="btn btn--sm btn--primary" href="contact.html">Get a Quote</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumbs" data-reveal>
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>About</span>
+          </div>
+
+          <div class="prose" data-reveal>
+            <h1>About Veltrix Tech</h1>
+            <p>
+              Veltrix Tech is a partnership firm focused on building modern, reliable digital solutions for businesses.
+              We combine clean UI/UX, strong engineering, and fast delivery to help you launch products that actually perform.
+            </p>
+
+            <div class="note">
+              We build with: PHP/Laravel, Node.js/Express, JavaScript, MongoDB/MySQL, Next.js/React, Python/Django,
+              React Native, Flutter—and we choose the right stack based on your goals.
+            </div>
+
+            <h2>What we do</h2>
+            <ul>
+              <li>Websites and web applications</li>
+              <li>AI chatbots and business automation</li>
+              <li>Mobile applications</li>
+              <li>Custom software for teams</li>
+              <li>Ecommerce and multi-vendor platforms</li>
+            </ul>
+
+            <h2>Why clients choose us</h2>
+            <ul>
+              <li>Premium design with conversion-first UX</li>
+              <li>Secure, scalable development</li>
+              <li>Transparent timelines and communication</li>
+              <li>Post-launch support and improvements</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img class="brand__logo brand__logo--footer" src="./images/veltrix-white-bg.png" alt="Veltrix Tech" width="140" height="36" loading="lazy" />
+          <p class="footer__text">Premium IT solutions for modern businesses.</p>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Company</p>
+          <div class="footer__list">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Legal</p>
+          <div class="footer__list">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Services</p>
+          <div class="footer__list">
+            <a href="index.html#services">Websites</a>
+            <a href="index.html#services">AI Chatbots</a>
+            <a href="index.html#services">Ecommerce / Multi‑vendor</a>
+          </div>
+          <div class="footer__copy" style="margin-top:10px">© <span id="year"></span> Veltrix Tech. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

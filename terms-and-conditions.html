@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Veltrix Tech Terms and Conditions." />
+    <title>Terms & Conditions | Veltrix Tech</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="bg">
+      <div class="bg__grid"></div>
+      <div class="bg__glow bg__glow--a"></div>
+      <div class="bg__glow bg__glow--b"></div>
+      <div class="bg__noise" aria-hidden="true"></div>
+    </div>
+
+    <header class="header" data-elevate>
+      <div class="container header__inner">
+        <a class="brand" href="index.html" aria-label="Veltrix Tech home">
+          <img class="brand__logo brand__logo--nav" src="./images/veltrix-white-bg.png" alt="Veltrix Tech logo" width="140" height="36" loading="eager" />
+        </a>
+
+        <nav class="nav" aria-label="Primary navigation">
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span class="nav__toggleLines" aria-hidden="true"></span>
+            <span class="sr-only">Toggle menu</span>
+          </button>
+          <div class="nav__menu" id="navMenu">
+            <a class="nav__link" href="index.html#services">Services</a>
+            <a class="nav__link" href="index.html#stack">Tech Stack</a>
+            <a class="nav__link" href="about.html">About</a>
+            <a class="nav__link" href="faq.html">FAQ</a>
+            <a class="nav__link" href="contact.html">Contact</a>
+            <a class="btn btn--sm btn--primary" href="contact.html">Get a Quote</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <div class="container">
+          <div class="breadcrumbs" data-reveal>
+            <a href="index.html">Home</a>
+            <span aria-hidden="true">/</span>
+            <span>Terms & Conditions</span>
+          </div>
+
+          <div class="prose" data-reveal>
+            <h1>Terms & Conditions</h1>
+            <p>
+              These Terms & Conditions (“Terms”) govern your use of the Veltrix Tech website and our services. By contacting us or
+              using our website, you agree to these Terms.
+            </p>
+
+            <h2>Services</h2>
+            <p>
+              We provide IT services including (but not limited to) website development, application development, AI chatbots,
+              ecommerce solutions, multi-vendor platforms, and custom software.
+            </p>
+
+            <h2>Quotations & project scope</h2>
+            <ul>
+              <li>All quotations are based on the requirements shared at the time of discussion.</li>
+              <li>Final scope, milestones, and payment terms will be shared in the project proposal/contract.</li>
+              <li>Changes in scope may require timeline and cost changes.</li>
+            </ul>
+
+            <h2>Payments</h2>
+            <p>
+              Payment schedules are typically milestone-based. Work may be paused if payments are overdue, as per agreed terms.
+            </p>
+
+            <h2>Intellectual property</h2>
+            <p>
+              Unless otherwise agreed in writing, ownership of deliverables transfers after full payment. Third‑party assets (fonts,
+              plugins, APIs) remain under their respective licenses.
+            </p>
+
+            <h2>Support</h2>
+            <p>
+              Post-launch support and maintenance can be provided under a separate support plan or as per the agreement.
+            </p>
+
+            <h2>Limitation of liability</h2>
+            <p>
+              We are not liable for indirect or consequential damages. Our liability is limited to the amount paid for the services,
+              to the maximum extent permitted by law.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+              For any questions, please contact us via the <a href="contact.html">Contact</a> page.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <img class="brand__logo brand__logo--footer" src="./images/veltrix-white-bg.png" alt="Veltrix Tech" width="140" height="36" loading="lazy" />
+          <p class="footer__text">Premium IT solutions for modern businesses.</p>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Company</p>
+          <div class="footer__list">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Legal</p>
+          <div class="footer__list">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-and-conditions.html">Terms & Conditions</a>
+          </div>
+        </div>
+
+        <div>
+          <p class="footer__colTitle">Services</p>
+          <div class="footer__list">
+            <a href="index.html#services">Websites</a>
+            <a href="index.html#services">AI Chatbots</a>
+            <a href="index.html#services">Ecommerce / Multi‑vendor</a>
+          </div>
+          <div class="footer__copy" style="margin-top:10px">© <span id="year"></span> Veltrix Tech. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

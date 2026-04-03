@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Contact Veltrix Tech — websites, AI chatbots, apps, ecommerce, and software." />
-    <title>Contact Us | Veltrix Tech</title>
+    <meta
+      name="description"
+      content="Contact Vernaxify Tech — project quotes, timelines, and support. Email, WhatsApp, or send a detailed brief."
+    />
+    <title>Contact Us | Vernaxify Tech</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,8 +26,8 @@
 
     <header class="header" data-elevate>
       <div class="container header__inner">
-        <a class="brand" href="index.html" aria-label="Veltrix Tech home">
-          <img class="brand__logo brand__logo--nav" src="./images/veltrix-white-bg.png" alt="Veltrix Tech logo" width="140" height="36" loading="eager" />
+        <a class="brand" href="index.html" aria-label="Vernaxify Tech home">
+          <img class="brand__logo brand__logo--nav" src="./images/vernexify-white-bg.png" alt="Vernaxify Tech logo" width="140" height="36" loading="eager" />
         </a>
 
         <nav class="nav" aria-label="Primary navigation">
@@ -33,10 +36,9 @@
             <span class="sr-only">Toggle menu</span>
           </button>
           <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="index.html#services">Services</a>
-            <a class="nav__link" href="index.html#stack">Tech Stack</a>
+            <a class="nav__link" href="index.html">Home</a>
+            <a class="nav__link" href="services.html">Services</a>
             <a class="nav__link" href="about.html">About</a>
-            <a class="nav__link" href="faq.html">FAQ</a>
             <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
             <a class="btn btn--sm btn--primary" href="#form">Get a Quote</a>
           </div>
@@ -45,7 +47,7 @@
     </header>
 
     <main id="main">
-      <section class="page-hero">
+      <section class="contact-hero" aria-labelledby="contact-heading">
         <div class="container">
           <div class="breadcrumbs" data-reveal>
             <a href="index.html">Home</a>
@@ -53,119 +55,177 @@
             <span>Contact</span>
           </div>
 
-          <div class="prose" data-reveal>
-            <h1>Contact Veltrix Tech</h1>
-            <p>
-              Share your requirement and we’ll reply with a timeline + estimate. For fastest response, you can connect on WhatsApp.
+          <div class="contact-hero__panel" data-reveal>
+            <p class="contact-hero__kicker">Get in touch</p>
+            <h1 id="contact-heading" class="contact-hero__title">
+              Let’s plan your next <span class="grad">build</span>
+            </h1>
+            <p class="contact-hero__lead">
+              Share goals, rough timeline, and what success looks like. We’ll reply with clarifying questions, a scope outline,
+              and next steps — usually within one business day.
             </p>
-
-            <div class="note" data-reveal>
-              Tip: If you want WhatsApp integration with your website, we can add a floating WhatsApp button + lead tracking.
+            <div class="contact-hero__chips" aria-label="Highlights">
+              <span class="chip2">Detailed briefs welcome</span>
+              <span class="chip2">NDA-friendly</span>
+              <span class="chip2">Remote, worldwide</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section section--cta" id="form">
+      <section class="section section--contact" id="form">
         <div class="container">
-          <div class="cta" data-reveal>
-            <div class="cta__left">
-              <h2 class="cta__title">Request a callback / quote</h2>
-              <p class="cta__sub">We usually respond quickly during business hours.</p>
+          <div class="cta2 contactCta" data-reveal>
+            <div class="contactCta__aside">
+              <div class="cta2__badge">Direct channels</div>
+              <h2 class="cta2__title">Email or WhatsApp</h2>
+              <p class="cta2__sub">
+                Prefer something quick? Reach out directly. For structured quotes, use the form — it helps us respond with fewer
+                back-and-forth messages.
+              </p>
 
-              <div class="cta__meta">
-                <div class="meta">
-                  <div class="meta__k">Email</div>
-                  <div class="meta__v">hello@veltrix.tech</div>
-                </div>
-                <div class="meta">
-                  <div class="meta__k">WhatsApp</div>
-                  <div class="meta__v">Add your number here</div>
-                </div>
+              <div class="contactChannels">
+                <a class="contactChannel contactChannel--email" href="mailto:hello@vernaxify.tech">
+                  <span class="contactChannel__icon" aria-hidden="true">@</span>
+                  <span class="contactChannel__body">
+                    <span class="contactChannel__k">Email</span>
+                    <span class="contactChannel__v">hello@vernaxify.tech</span>
+                  </span>
+                </a>
+                <a
+                  class="contactChannel contactChannel--wa"
+                  data-wa-link
+                  href="https://wa.me/919999999999"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span class="contactChannel__icon" aria-hidden="true">↗</span>
+                  <span class="contactChannel__body">
+                    <span class="contactChannel__k">WhatsApp</span>
+                    <span class="contactChannel__v">Message us on WhatsApp</span>
+                  </span>
+                </a>
               </div>
 
-              <div style="margin-top:14px" data-reveal>
-                <a class="btn btn--ghost" href="https://wa.me/" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+              <div class="contactNext">
+                <p class="contactNext__title">What happens next</p>
+                <ol class="contactNext__list">
+                  <li>We read your message and confirm we understood the problem.</li>
+                  <li>We may ask 2–3 focused questions (stack, users, deadlines).</li>
+                  <li>You get a written outline: milestones, rough timeline, and estimate band.</li>
+                </ol>
               </div>
             </div>
 
-            <form class="form" id="leadForm" autocomplete="on">
-              <div class="form__row">
-                <label class="field">
-                  <span class="field__label">Your name</span>
-                  <input class="field__input" name="name" required placeholder="Full name" />
-                </label>
-                <label class="field">
-                  <span class="field__label">Phone / WhatsApp</span>
-                  <input class="field__input" name="phone" required placeholder="+91…" inputmode="tel" />
-                </label>
+            <div class="cta2__right">
+              <div class="formCard">
+                <div class="formCard__head">
+                  <div>
+                    <div class="formCard__k">Project brief</div>
+                    <div class="formCard__t">Send your requirement</div>
+                  </div>
+                  <div class="formCard__seal">24h</div>
+                </div>
+
+                <form class="form2" id="leadForm" autocomplete="on">
+                  <div class="form2__row">
+                    <label class="field2">
+                      <span class="field2__label">Name</span>
+                      <input class="field2__input" name="name" required placeholder="Full name" />
+                    </label>
+                    <label class="field2">
+                      <span class="field2__label">Phone / WhatsApp</span>
+                      <input class="field2__input" name="phone" required placeholder="+91…" inputmode="tel" />
+                    </label>
+                  </div>
+
+                  <label class="field2">
+                    <span class="field2__label">Email</span>
+                    <input class="field2__input" name="email" type="email" placeholder="name@company.com" />
+                  </label>
+
+                  <label class="field2">
+                    <span class="field2__label">What do you want to build?</span>
+                    <textarea
+                      class="field2__input field2__input--area"
+                      name="message"
+                      required
+                      placeholder="Website / AI chatbot / app / ecommerce / multi-vendor…"
+                      rows="5"
+                    ></textarea>
+                  </label>
+
+                  <button class="btn btn--primary form2__submit" type="submit">Send request</button>
+                  <p class="form2__hint">
+                    This opens your email app with your message pre-filled. We can wire this to WhatsApp or a backend API anytime.
+                  </p>
+                </form>
               </div>
-
-              <label class="field">
-                <span class="field__label">Email</span>
-                <input class="field__input" name="email" type="email" placeholder="name@company.com" />
-              </label>
-
-              <label class="field">
-                <span class="field__label">What do you want to build?</span>
-                <textarea
-                  class="field__input field__input--area"
-                  name="message"
-                  required
-                  placeholder="Website / AI chatbot / app / ecommerce / multi-vendor…"
-                  rows="4"
-                ></textarea>
-              </label>
-
-              <div class="form__actions">
-                <button class="btn btn--primary" type="submit">Send Request</button>
-                <p class="form__hint">
-                  Form opens your email app (mailto). We can connect it to WhatsApp/API anytime.
-                </p>
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container footer__inner">
-        <div class="footer__brand">
-          <img class="brand__logo brand__logo--footer" src="./images/veltrix-white-bg.png" alt="Veltrix Tech" width="140" height="36" loading="lazy" />
-          <p class="footer__text">Premium IT solutions for modern businesses.</p>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <div class="footer__brandRow">
+              <img class="brand__logo brand__logo--footer" src="./images/vernexify-white-bg.png" alt="Vernaxify Tech" width="160" height="40" loading="lazy" />
+            </div>
+            <p class="footer__text">Premium IT &amp; digital solutions for modern businesses.</p>
+            <div class="footer__meta" aria-label="Contact links">
+              <a href="contact.html">Get a Quote</a>
+              <a href="contact.html#form">Contact</a>
+            </div>
+          </div>
+
+          <div class="footer__cols" aria-label="Footer links">
+            <div>
+              <p class="footer__colTitle">Company</p>
+              <div class="footer__list">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="faq.html">FAQ</a>
+              </div>
+            </div>
+
+            <div>
+              <p class="footer__colTitle">Services</p>
+              <div class="footer__list">
+                <a href="services.html#web">Websites & Web Apps</a>
+                <a href="services.html#ai">AI Chatbots</a>
+                <a href="services.html#commerce">Ecommerce / Multi‑vendor</a>
+              </div>
+            </div>
+
+            <div>
+              <p class="footer__colTitle">Legal</p>
+              <div class="footer__list">
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div>
-          <p class="footer__colTitle">Company</p>
-          <div class="footer__list">
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+        <div class="footer__bottom">
+          <div class="footer__copy">© <span id="year"></span> Vernaxify Tech. All rights reserved.</div>
+          <div class="footer__bottomLinks">
+            <a href="privacy-policy.html">Privacy</a>
+            <a href="terms-and-conditions.html">Terms</a>
             <a href="faq.html">FAQ</a>
+            <a href="contact.html">Support</a>
           </div>
-        </div>
-
-        <div>
-          <p class="footer__colTitle">Legal</p>
-          <div class="footer__list">
-            <a href="privacy-policy.html">Privacy Policy</a>
-            <a href="terms-and-conditions.html">Terms & Conditions</a>
-          </div>
-        </div>
-
-        <div>
-          <p class="footer__colTitle">Services</p>
-          <div class="footer__list">
-            <a href="index.html#services">Websites</a>
-            <a href="index.html#services">AI Chatbots</a>
-            <a href="index.html#services">Ecommerce / Multi‑vendor</a>
-          </div>
-          <div class="footer__copy" style="margin-top:10px">© <span id="year"></span> Veltrix Tech. All rights reserved.</div>
         </div>
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
-

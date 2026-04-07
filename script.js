@@ -26,10 +26,20 @@ window.addEventListener("scroll", setElevated, { passive: true });
 // Mobile nav
 const navToggle = qs(".nav__toggle");
 const navMenu = qs(".nav__menu");
+const closeNavDrops = () => {
+  qsa("[data-nav-drop].is-open").forEach((d) => {
+    d.classList.remove("is-open");
+    const hit = qs(".navDrop__hit", d);
+    const expand = qs(".navDrop__expand", d);
+    if (hit) hit.setAttribute("aria-expanded", "false");
+    if (expand) expand.setAttribute("aria-expanded", "false");
+  });
+};
 const closeMenu = () => {
   if (!navToggle || !navMenu) return;
   navToggle.setAttribute("aria-expanded", "false");
   navMenu.classList.remove("is-open");
+  closeNavDrops();
 };
 const openMenu = () => {
   if (!navToggle || !navMenu) return;
@@ -55,6 +65,80 @@ if (navToggle && navMenu) {
     if (window.innerWidth > 720) closeMenu();
   });
 }
+
+// Mega menus (desktop hover + mobile expand)
+(() => {
+  const drops = qsa("[data-nav-drop]");
+  if (!drops.length) return;
+
+  let hoverCloseTimer = null;
+  const isDesk = () => window.matchMedia("(min-width: 721px)").matches;
+  const isFineHover = () => window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+
+  const setDropOpen = (drop, open) => {
+    drop.classList.toggle("is-open", open);
+    const hit = qs(".navDrop__hit", drop);
+    const expand = qs(".navDrop__expand", drop);
+    if (hit) hit.setAttribute("aria-expanded", open ? "true" : "false");
+    if (expand) expand.setAttribute("aria-expanded", open ? "true" : "false");
+  };
+
+  const closeAll = (except) => {
+    drops.forEach((d) => {
+      if (except && d === except) return;
+      setDropOpen(d, false);
+    });
+  };
+
+  drops.forEach((drop) => {
+    const expand = qs(".navDrop__expand", drop);
+
+    if (expand) {
+      expand.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const open = drop.classList.contains("is-open");
+        closeAll();
+        setDropOpen(drop, !open);
+      });
+    }
+
+    drop.addEventListener("mouseenter", () => {
+      if (!isDesk() || !isFineHover()) return;
+      if (hoverCloseTimer) window.clearTimeout(hoverCloseTimer);
+      closeAll(drop);
+      setDropOpen(drop, true);
+    });
+
+    drop.addEventListener("mouseleave", () => {
+      if (!isDesk() || !isFineHover()) return;
+      hoverCloseTimer = window.setTimeout(() => setDropOpen(drop, false), 160);
+    });
+  });
+
+  window.addEventListener(
+    "keydown",
+    (e) => {
+      if (e.key === "Escape") closeAll();
+    },
+    { passive: true }
+  );
+
+  document.addEventListener("click", (e) => {
+    if (!isDesk()) return;
+    const t = e.target;
+    if (t.closest && t.closest("[data-nav-drop]")) return;
+    closeAll();
+  });
+
+  window.addEventListener(
+    "resize",
+    () => {
+      if (isDesk()) closeAll();
+    },
+    { passive: true }
+  );
+})();
 
 // Reveal on view
 const revealEls = qsa("[data-reveal]");
@@ -142,9 +226,8 @@ qsa("[data-acc]").forEach((acc) => {
   const navTl = gsap.timeline({ defaults: { ease: "power3.out" } });
   navTl
     .from(".brand__logo--nav", { y: -10, opacity: 0, duration: 0.6 })
-    .from(".nav__link", { y: -8, opacity: 0, duration: 0.45, stagger: 0.04 }, "-=0.35");
-  const navCta = qs(".nav__menu .btn");
-  if (navCta) navTl.from(navCta, { y: -8, opacity: 0, duration: 0.42 }, "-=0.28");
+    .from(".header__top > *", { y: -8, opacity: 0, duration: 0.4, stagger: 0.06 }, "-=0.45")
+    .from(".nav__menu > *", { y: -8, opacity: 0, duration: 0.45, stagger: 0.04 }, "-=0.32");
 
   if (!reduceMotion) {
     gsap.to(".bg__glow", { opacity: 0.78, duration: 2.2, yoyo: true, repeat: -1, ease: "sine.inOut" });
@@ -595,4 +678,11 @@ if (form) {
     pushAssistantReply(text, 480);
   });
 })();
+
+qsa("[data-open-assistant]").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const b = qs(".fab--bot");
+    if (b) b.click();
+  });
+});
 

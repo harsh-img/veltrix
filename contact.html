@@ -25,24 +25,263 @@
     </div>
 
     <header class="header" data-elevate>
-      <div class="container header__inner">
-        <a class="brand" href="index.html" aria-label="Vernaxify Tech home">
-          <img class="brand__logo brand__logo--nav" src="./images/vernexify-white-bg.png" alt="Vernaxify Tech logo" width="140" height="36" loading="eager" />
-        </a>
+      <div class="container header__shell">
+        <div class="header__row">
+          <a class="brand" href="index.html" aria-label="Vernaxify Tech home">
+            <img class="brand__logo brand__logo--nav" src="./images/light-bg.png" alt="" width="200" height="56" loading="eager" />
+          </a>
 
-        <nav class="nav" aria-label="Primary navigation">
-          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
-            <span class="nav__toggleLines" aria-hidden="true"></span>
-            <span class="sr-only">Toggle menu</span>
-          </button>
-          <div class="nav__menu" id="navMenu">
-            <a class="nav__link" href="index.html">Home</a>
-            <a class="nav__link" href="services.html">Services</a>
-            <a class="nav__link" href="about.html">About</a>
-            <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
-            <a class="btn btn--sm btn--primary" href="#form">Get a Quote</a>
-          </div>
-        </nav>
+          <nav class="nav" aria-label="Primary navigation">
+            <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+              <span class="nav__toggleLines" aria-hidden="true"></span>
+              <span class="sr-only">Toggle menu</span>
+            </button>
+
+            <div class="nav__menu" id="navMenu">
+              <div class="nav__links">
+                <a class="nav__link" href="index.html">Home</a>
+
+                <div class="navDrop" data-nav-drop>
+                <div class="navDrop__row">
+                  <a class="nav__link navDrop__hit" href="services.html" aria-expanded="false">
+                    Services
+                    <span class="navDrop__chev" aria-hidden="true"></span>
+                  </a>
+                  <button
+                    class="navDrop__expand"
+                    type="button"
+                    aria-label="Toggle services menu"
+                    aria-expanded="false"
+                    aria-controls="megaServices"
+                  >
+                    <span class="navDrop__expandIcon" aria-hidden="true">⌄</span>
+                  </button>
+                </div>
+                <div class="mega" id="megaServices" role="region" aria-label="Services menu">
+                  <div class="mega__grid">
+                    <div class="mega__card">
+                      <p class="mega__h">Web</p>
+                      <div class="mega__links">
+                        <a class="mega__a" href="services.html#web">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Websites &amp; web apps
+                            <span class="mega__sub">Fast, SEO‑ready, conversion‑focused</span>
+                          </span>
+                        </a>
+                        <a class="mega__a" href="services.html#web">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Dashboards &amp; portals
+                            <span class="mega__sub">Roles, analytics, integrations</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega__card">
+                      <p class="mega__h">AI &amp; automation</p>
+                      <div class="mega__links">
+                        <a class="mega__a" href="services.html#ai">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            AI chatbots
+                            <span class="mega__sub">Website + WhatsApp‑style flows</span>
+                          </span>
+                        </a>
+                        <a class="mega__a" href="services.html#ai">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Internal AI tools
+                            <span class="mega__sub">Summaries, search, workflows</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega__card">
+                      <p class="mega__h">Apps &amp; software</p>
+                      <div class="mega__links">
+                        <a class="mega__a" href="services.html#apps">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Mobile apps
+                            <span class="mega__sub">React Native / Flutter</span>
+                          </span>
+                        </a>
+                        <a class="mega__a" href="services.html#apps">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Custom internal tools
+                            <span class="mega__sub">CRM / ERP / workflows</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="mega__card">
+                      <p class="mega__h">Commerce</p>
+                      <div class="mega__links">
+                        <a class="mega__a" href="services.html#commerce">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Ecommerce stores
+                            <span class="mega__sub">Checkout, payments, growth</span>
+                          </span>
+                        </a>
+                        <a class="mega__a" href="services.html#commerce">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            Multi‑vendor marketplaces
+                            <span class="mega__sub">Vendors, payouts, dashboards</span>
+                          </span>
+                        </a>
+                        <a class="mega__a" href="services.html#engagement">
+                          <span class="mega__dot" aria-hidden="true"></span>
+                          <span class="mega__aText">
+                            How we work
+                            <span class="mega__sub">Discovery → launch process</span>
+                          </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                <div class="navDrop" data-nav-drop>
+                  <div class="navDrop__row">
+                    <a class="nav__link navDrop__hit" href="index.html#stack" aria-expanded="false">
+                      Solutions
+                      <span class="navDrop__chev" aria-hidden="true"></span>
+                    </a>
+                    <button
+                      class="navDrop__expand"
+                      type="button"
+                      aria-label="Toggle solutions menu"
+                      aria-expanded="false"
+                      aria-controls="megaSolutions"
+                    >
+                      <span class="navDrop__expandIcon" aria-hidden="true">⌄</span>
+                    </button>
+                  </div>
+                  <div class="mega" id="megaSolutions" role="region" aria-label="Solutions menu">
+                    <div class="mega__grid">
+                      <div class="mega__card">
+                        <p class="mega__h">Build &amp; scale</p>
+                        <div class="mega__links">
+                          <a class="mega__a" href="index.html#stack">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Tech stack
+                              <span class="mega__sub">Laravel, Node, React, AI &amp; more</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="index.html#work">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              How we work
+                              <span class="mega__sub">Process, milestones, delivery</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="index.html#contact">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Support &amp; quote
+                              <span class="mega__sub">Fast response, clear next steps</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mega__card">
+                        <p class="mega__h">Company</p>
+                        <div class="mega__links">
+                          <a class="mega__a" href="about.html">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              About Vernaxify
+                              <span class="mega__sub">Who we are &amp; what we do</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="faq.html">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              FAQ
+                              <span class="mega__sub">Common questions, timelines</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="privacy-policy.html">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Privacy &amp; terms
+                              <span class="mega__sub">Legal pages</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mega__card">
+                        <p class="mega__h">Core services</p>
+                        <div class="mega__links">
+                          <a class="mega__a" href="services.html#web">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Websites &amp; web apps
+                              <span class="mega__sub">UI/UX + performance</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="services.html#ai">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              AI automation
+                              <span class="mega__sub">Chatbots, workflows</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="services.html#commerce">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Ecommerce &amp; marketplaces
+                              <span class="mega__sub">Stores + multi‑vendor</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="mega__card">
+                        <p class="mega__h">Quick links</p>
+                        <div class="mega__links">
+                          <a class="mega__a" href="#form" aria-current="page">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Schedule a call
+                              <span class="mega__sub">Book a quick discussion</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="services.html">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              View all services
+                              <span class="mega__sub">Explore categories</span>
+                            </span>
+                          </a>
+                          <a class="mega__a" href="index.html#about">
+                            <span class="mega__dot" aria-hidden="true"></span>
+                            <span class="mega__aText">
+                              Why Vernaxify
+                              <span class="mega__sub">Design + engineering focus</span>
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a class="nav__link" href="about.html">About</a>
+                <a class="nav__link" href="contact.html" aria-current="page">Contact</a>
+              </div>
+
+              <div class="nav__actions">
+                <a class="btn btn--sm btn--navGhost" href="#form">Schedule a call</a>
+              </div>
+            </div>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -174,11 +413,9 @@
             <div class="footer__brandRow">
               <img class="brand__logo brand__logo--footer" src="./images/vernexify-white-bg.png" alt="Vernaxify Tech" width="160" height="40" loading="lazy" />
             </div>
-            <p class="footer__text">Premium IT &amp; digital solutions for modern businesses.</p>
-            <div class="footer__meta" aria-label="Contact links">
-              <a href="contact.html">Get a Quote</a>
-              <a href="contact.html#form">Contact</a>
-            </div>
+            <p class="footer__text">
+              Premium IT &amp; digital solutions for modern businesses. Turning ideas into their next version.
+            </p>
           </div>
 
           <div class="footer__cols" aria-label="Footer links">
